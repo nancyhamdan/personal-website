@@ -1,0 +1,31 @@
+.subcontent-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.dark-bg {
+    background-color: #e8dcb9ff;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-left,
+.text-left {
+    grid-column: 1;
+}
+
+.art-right,
+.text-right {
+    grid-column: 2;
+}
+
+.text-holder {
+    width: 70%;
+    font-size: 2.5vh;
+    text-align: justify;
+    text-justify: inter-word;
+}

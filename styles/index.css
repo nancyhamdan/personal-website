@@ -1,0 +1,19 @@
+#main-content {
+    grid-template-rows: 100vh 100vh 100vh 100vh;
+}
+
+.link:link {
+    color: #2D3142;
+}
+
+.link:visited {
+    color: #171922;
+}
+
+.link:hover {
+    color: #6D7597;
+}
+
+.graphic {
+    width: 85%;
+}

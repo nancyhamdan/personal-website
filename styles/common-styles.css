@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: 0px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    overflow: hidden;
+}
+
+#main-grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 15% 85%;
+    background-color: #FFF8E8;
+}
+
+#nav-bar {
+    grid-column: 1;
+    background-color: #2D3142;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+#logo-sec {
+    grid-row: 1;
+    background-color: #171922;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    font-size: 7vw;
+    margin-bottom: 1vh;
+}
+
+#name-logo {
+    text-align: center;
+    font-size: 0.9vw;
+    letter-spacing: 0.15vw;
+}
+
+#logo,
+#name-logo {
+    background-image: linear-gradient(to right, #FFE099, #FFF8E8, #E6D9B2, #D2BB74);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* increase background size by 300 percent */
+    background-size: 300%;
+    /* move the bg 100 units to the left */
+    background-position: -100%;
+    animation: animate-logo 3s infinite alternate-reverse;
+}
+
+@keyframes animate-logo {
+    /* move the bg till it reaches 100 units to the right */
+    to {
+        background-position: 100%;
+    }
+}
+
+#menu {
+    margin-top: 165px;
+    grid-row: 2;
+    width: 100%;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#menu li a {
+    font-size: 2vh;
+    display: block;
+    padding: 20px;
+    color: #FFF8E8;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu li a.active-nav {
+    background-color: #6D7597;
+}
+
+#menu li a:hover:not(.active-nav) {
+    background-color: #474D68;
+}
+
+#main-content {
+    grid-column: 2;
+    background-color: #FFF8E8;
+    display: grid;
+    grid-template-columns: 100%;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+#main-content>div {
+    scroll-snap-align: start;
+}

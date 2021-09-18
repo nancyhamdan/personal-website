@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project id="1">
+        <title>EHR System Prototype</title>
+        <desc>
+            Applied the HCI design process in developing a prototype for an Electronic Health Record System that is used for 
+            managing healthcare using figma. Followed user centered design that employed design principles and met usability goals.
+        </desc>
+        <img>./images/EHR.jpg</img>
+    </project>
+    <project id="2">
+        <title>Network Infrastructure Solution</title>
+        <desc>
+            Designed a networking solution for a hypothetical University in Dubai. Created the networking and infrastructure design, 
+            network addressing scheme and simulated the infrastructure using Cisco Packet Tracer.
+        </desc>
+        <img>./images/networking.jpg</img>
+    </project>
+    <project id="3">
+        <title>University Management System Console App</title>
+        <desc>
+            Created a console-based University Management System application using C++. Employed object-oriented analysis, design and programming. 
+            Functions included but were not limited to: listing teachers, listing students, listing students and subjects taught by a given teacher, 
+            add teachers or students, add subjects to teachers and students.
+        </desc>
+        <img>./images/cpp-app.png</img>
+    </project>
+    <project id="4">
+        <title>Quiz Game In Go</title>
+        <desc>
+            Created a console-based quiz game using Go where the user is asked to give a csv file with questions and answers and the 
+            application gives the user random questions from the file, gives them a limited time to answer, and finally shows the user’s 
+            score. Used goroutines and channels to create the limited time feature.
+        </desc>
+        <img>./images/quizGame.png</img>
+    </project>
+    <project id="5">
+        <title>Hash Based 2-Sum Problem Solution</title>
+        <desc>
+            Created a Hash based solution to the 2-Sum problem. Created hash tables and implemented two hashing algorithms to insert data 
+            to the tables and search them, FIFO and Double Hashing.
+        </desc>
+        <img>./images/hashing-app.png</img>
+    </project>
+    <project id="6">
+        <title>Is NumberPrime</title>
+        <desc>
+            Created a Go program that determines if a very large number (19 digit number) is prime or not, used goroutines to distribute the 
+            work and run it parallelly and channels to communicate results.
+        </desc>
+        <img>./images/isPrime.png</img>
+    </project>
+</projects>

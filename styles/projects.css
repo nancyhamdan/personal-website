@@ -1,0 +1,40 @@
+#main-content {
+    grid-template-rows: 100vh 100vh 100vh 100vh 100vh 100vh;
+}
+
+.polaroid {
+    width: 65%;
+    height: 412px;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+    filter: grayscale(100%);
+    transform: scale(0.9, 0.9);
+    transition: filter 1s, transform 1s;
+    transition-timing-function: ease;
+}
+
+.art-right .polaroid {
+    transform: rotate(5deg);
+}
+
+.art-left .polaroid {
+    transform: rotate(-5deg);
+}
+
+.polaroid:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1, 1.1) rotate(0deg);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 85%;
+}
+
+.polaroid .title {
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 1.2vh;
+    margin-top: 2vh;
+}

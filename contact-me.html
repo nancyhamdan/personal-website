@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nancy Hamdan - Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/common-styles.css">
+    <link rel="stylesheet" href="./styles/contact-me.css">
+</head>
+
+<body>
+    <section id="main-grid-container">
+        <div id="nav-bar">
+            <div id="logo-sec">
+                <div id="logo" class="fa fa-code"></div>
+                <div id="name-logo">Nancy Hamdan</div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a class="active-nav" href="./contact-me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="flexbox" id="form-section">
+                <div id="form-container">
+                    <form id="ContactMeForm" name="ContactMeForm" onsubmit="return validateForm()">
+                        <label class="label" for="fname">First Name</label><br>
+                        <input class="input" type="text" id="fname" name="firstname" placeholder="ِِِِِEnter your first name"><br>
+                        <div class="error-msg" id="fname-err"></div>
+
+                        <label class="label" for="lname">Last Name</label><br>
+                        <input class="input" type="text" id="lname" name="lastname" placeholder="ِِِِِEnter your last name"><br>
+                        <div class="error-msg" id="lname-err"></div>
+
+                        <label class="label" for="email">Email</label><br>
+                        <input class="input" type="text" id="email" name="email" placeholder="ِِِِِEnter email address"><br>
+                        <div class="error-msg" id="email-err"></div>
+
+                        <label class="label" for="message">Message</label><br>
+                        <textarea class="input" id="message" name="message" placeholder="Enter your message"></textarea>
+                        <div class="error-msg" id="message-err"></div>
+
+                        <div id="submit-btn-container">
+                            <input id="submit-btn" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flexbox" id="contact-me-art">
+                <object id="messages-svg" type="image/svg+xml" data="./svgs/messages-graphic.svg" class="logo">
+                    Contact Me Graphic
+                </object>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./scripts/contact-me.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nancy Hamdan - About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/common-styles.css">
+    <link rel="stylesheet" href="./styles/grid-layout.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <section id="main-grid-container">
+        <div id="nav-bar">
+            <div id="logo-sec" onclick="">
+                <div id="logo" class="fa fa-code"></div>
+                <div id="name-logo">Nancy Hamdan</div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a class="active-nav" href="./index.html">About</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="./contact-me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-content">
+            <div class="subcontent-grid" id="about">
+                <div class="flexbox art-left" id="about-art">
+                    <object class="graphic" id="about-svg" type="image/svg+xml" data="./svgs/about-graphic.svg" class="logo">
+                        About Graphic
+                    </object>
+                </div>
+                <div class="flexbox text-right" id="about-text">
+                    <div class="text-holder" id="about-text-holder">
+                        <h2>Hi! I’m Nancy.</h2><br>
+                        <p>
+                            I’m a rising junior Computer Science student majoring in Big Data at the University of Wollongong in Dubai. I’m an aspiring Data Scientist and would love to work in Data Science for healthcare in the future. Machine Learning has always fascinated me with
+                            its wide range of applications and was one of the primary reasons I decided to pursue Computer Science.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subcontent-grid dark-bg" id="projects">
+                <div class="flexbox text-left" id="projects-text">
+                    <div class="text-holder" id="projects-text-holder">
+                        <p>
+                            Although I don’t have any experience in Data Science yet, I have worked on several projects throughout my degree so far, alongside a few personal projects. You can check out some of my projects <a class="link" href="./projects.html">here</a>.
+                            They range from UI/UX design, OOP programming, algorithms and data structures, to some simple applications of concurrency.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox art-right" id="projects-art">
+                    <object class="graphic" id="projects-svg" type="image/svg+xml" data="./svgs/projects-graphic.svg" class="logo">
+                        Projects Graphic
+                    </object>
+                </div>
+            </div>
+            <div class="subcontent-grid" id="hobbies">
+                <div class="flexbox art-left" id="hobbies-art">
+                    <object class="graphic" id="hobbies-svg" type="image/svg+xml" data="./svgs/hobbies-graphic.svg" class="logo">
+                        Hobbies Graphic
+                    </object>
+                </div>
+                <div class="flexbox text-right" id="hobbies-text">
+                    <div class="text-holder" id="hobbies-text-holder">
+                        <p>
+                            When I want to spend some time away from programming and Computer Science, I like to edit pictures that I’ve taken on previous trips, play the piano or watch anime or TV shows. You can find some of the photographs I’ve taken as well as a few of my favorite
+                            pieces and songs to play on the piano <a class="link" href="./hobbies.html">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="subcontent-grid dark-bg" id="contact-me">
+                <div class="flexbox text-left" id="contact-text">
+                    <div class="text-holder" id="contact-text-holder">
+                        <p>
+                            Do you have any questions? Notes or Remarks? Or perhaps you want to get to know me more? Feel free to send me a message <a class="link" href="./contact-me.html">here</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="flexbox art-right" id="contact-art">
+                    <object class="graphic" id="phone-svg" type="image/svg+xml" data="./svgs/phone-graphic.svg" class="logo">
+                            Contact Me Graphic
+                    </object>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./scripts/icon-animation.js"></script>
+</body>
+
+</html>
